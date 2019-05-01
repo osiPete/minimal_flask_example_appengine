@@ -22,16 +22,18 @@ def extractpackages():
     their indices and then returns them as a json file.
     """
     # the data the user input, in json format
-    input_data = request.json
+    #input_data = request.json
+    input_data = request.get_json()
 
     # use our API function to get the keywords
-    output_data = keywords_api(input_data)
+    #output_data = keywords_api(input_data)
 
     # convert our dictionary into a .json file
     # (returning a dictionary wouldn't be very
     # helpful for someone querying our API from
     # java; JSON is more flexible/portable)
-    response = json.dumps(output_data)
+    #response = json.dumps(output_data)
+    response = input_data
 
     # return our json file
     return response
