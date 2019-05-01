@@ -1,5 +1,3 @@
 gunicorn
-flashtext
-pickle
-json
 flask
+flashtext
