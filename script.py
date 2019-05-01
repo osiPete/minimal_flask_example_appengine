@@ -27,6 +27,7 @@ def extractpackages():
 
     # use our API function to get the keywords
     #output_data = keywords_api(input_data)
+    output_data = input_data
 
     # convert our dictionary into a .json file
     # (returning a dictionary wouldn't be very
