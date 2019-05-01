@@ -7,6 +7,10 @@ from flask import Flask, request
 # create an instance of Flask
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return "Up and running!"
+
 # load our pre-trained model & function
 keywords_api = get_keywords_api()
 
